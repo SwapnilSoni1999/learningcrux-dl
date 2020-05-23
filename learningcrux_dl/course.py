@@ -13,7 +13,7 @@ class Course:
         res = requests.get(course_url, headers={ 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36' })
         soup = BeautifulSoup(res.content, 'lxml')
         sections = soup.find_all('section', { 'class': 'sectionRow' })
-        self.course_title = soup.select_one('#content > h1').text
+        self.course_title = soup.select_one('#content > h1').text.strip()
         print(f'[Course] {self.course_title}')
         print("[learningcrux] Building course json data...")
         for sec in sections:
