@@ -31,5 +31,6 @@ setuptools.setup(
         'console_scripts': [
             'lcx-dl=learningcrux_dl.cli:lcx'
         ]
-    }
+    },
+    python_requires='>=3.6'
 )
