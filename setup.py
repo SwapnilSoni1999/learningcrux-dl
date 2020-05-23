@@ -8,7 +8,8 @@ setuptools.setup(
         'youtube-dl',
         'requests',
         'lxml',
-        'bs4'
+        'bs4',
+        'click',
     ],
     packages=['learningcrux_dl'],
     entry_points={
