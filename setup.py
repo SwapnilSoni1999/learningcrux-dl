@@ -13,6 +13,7 @@ setuptools.setup(
     description="Downloader for learningcrux.com",
     long_description=long_desc,
     long_description_content_type="text/markdown",
+    download_url="https://github.com/SwapnilSoni1999/learningcrux-dl/archive/v0.0.1.tar.gz",
     install_requires=[
         'youtube-dl',
         'requests',
@@ -23,7 +24,7 @@ setuptools.setup(
     classifiers=[
         "Natural Language :: English",
         "Programming Language :: Python :: 3 :: Only",
-        "License :: Unlicensed",
+        "License :: Public Domain",
         "Operating System :: OS Independent",
     ],
     packages=['learningcrux_dl'],
