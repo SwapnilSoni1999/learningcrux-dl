@@ -3,7 +3,9 @@ import os
 import re
 
 
-def download(course, course_title, output=os.getcwd()):
+def download(course, course_title, output):
+    if not output:
+        output = os.getcwd()
 
     course_title = re.sub(r'[^\w\-_\. ]', '_', course_title)
 
