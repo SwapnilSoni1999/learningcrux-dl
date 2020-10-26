@@ -74,7 +74,7 @@ def get_freetutorials_videos(section):
         video_title = vid_raw.find('a', {'class': 'list-brief__item__content'})
         video_title = video_title.text.strip()
 
-        relative_link = vid_raw.find('a', {'class': 'list-brief__item__content'})['href'].replace('video', 'play')
+        relative_link = vid_raw.find('a', {'class': 'list-brief__item__content'})['href'].replace('play', 'video')
         video_link = 'https://learningcrux.com' + relative_link
 
         data = {'title': video_title, 'url': video_link}
