@@ -45,6 +45,7 @@ and it will save in the given path.
 - Cannot resume download. (will be fixed in future updates)
 - Cannot download single video. (Releasing ASAP)
 - Uses youtube-dl so downloading can be done sequencially (no multithreads for now)
+- You must use `--output` arg to make the downloader work.
 
 #### License
 - SwapnilSoni1999 (Unlicensed)
